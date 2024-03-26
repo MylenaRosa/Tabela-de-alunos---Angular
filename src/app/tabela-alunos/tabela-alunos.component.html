@@ -1,0 +1,40 @@
+<div class="container">
+
+  <form>
+  <h2>Cadastro do aluno</h2>
+
+  <label> Nome:
+  </label>
+  <input type="text" [(ngModel)]="nome" name="nome">
+
+  <label> Nota 1:
+  </label>
+  <input type="number" [(ngModel)]="nota1" name="nota1">
+
+  <label> Nota 2:
+  </label>
+  <input type="number" [(ngModel)]="nota2" name="nota2">
+  <button (click)="cadastrarAlunos()">Cadastrar</button>
+  <button (click)="limparTabela()">Excluir</button>
+</form>
+
+<section class="table">
+  <h3>Tabela Alunos</h3>
+  <div class="table-title">
+    <h4>Nome do aluno</h4>
+    <h4>Nota 1</h4>
+    <h4>Nota 2</h4>
+    <h4>Média</h4>
+    <h4>Situação do aluno</h4>
+  </div>
+  <div class="table-body" *ngFor="let aluno of alunos">
+    <p>{{ aluno.nome }}</p>
+    <p>{{ aluno.nota1 }}</p>
+    <p>{{ aluno.nota2 }}</p>
+    <p>{{ aluno.media }}</p>
+    <p>{{ aluno.situacao }}</p>
+  </div>
+</section>
+</div>
+
+

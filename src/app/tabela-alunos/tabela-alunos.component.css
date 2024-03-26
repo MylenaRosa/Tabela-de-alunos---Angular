@@ -1,0 +1,80 @@
+.container {
+    display: flex;
+    width: 100vw;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 1px 1px 10px 10px #78a2b3cf ;
+}
+
+.container form input {
+    border-radius: 8px;
+    padding: 10px 15px;
+    border: 1px solid;
+}
+
+.container form button {
+    padding: 10px 20px;
+    border-radius: 8px;
+    width: 150px;
+    box-shadow: 1px 1px 10px 10px #78a2b31d;
+    border: 1px solid;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.container form button:hover {
+    scale: 1.1;
+    transition: all 0.3s;
+}
+.container .table {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 10px #78a2b3cf ;
+}
+
+.container .table .table-title {
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid;
+    border-top: 2px solid;
+}
+
+.container .table h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container .table .table-title h4 {
+    width: 150px;
+}
+.container .table .table-body {
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    text-align: center;
+}
+
+.container .table .table-body p {
+    width: 150px;
+}
